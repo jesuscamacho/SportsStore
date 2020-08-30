@@ -22,7 +22,13 @@ export class StaticDataSource {
         new Product(15, "Product 15", "Category 3", "Product 15 (Category 3)", 100),
     ];
 
+    /* Returns dummy data as an Observable that produces arrays of Product object
+    */  
     getProducts(): Observable<Product[]> {
         return from([this.products]);
     }
 }
+
+/* Notes:
+    - ? are optional parameters
+*/
