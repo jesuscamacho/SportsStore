@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: "app",
-  template: "<store></store>"
-  //template: `<div class="bg-success p-2 text-center text-white">This is SportsStore</div>`,
+  selector: 'app',
+  templateUrl: './app.component.html',
 })
 
 export class AppComponent { }
