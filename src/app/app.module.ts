@@ -17,7 +17,7 @@ import { StoreFirstGuard } from './storeFirst.guard';
       { path:'checkout', component:CheckoutComponent, canActivate: [StoreFirstGuard]},
       { path: 'admin',
         loadChildren: "./admin/admin.module#AdminModule",
-        canActivate: [StoreFirstGuard]}
+        canActivate: [StoreFirstGuard]},
       { path:'**', redirectTo: '/store'}
     ])],
     providers: [StoreFirstGuard],
