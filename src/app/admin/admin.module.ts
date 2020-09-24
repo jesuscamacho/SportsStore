@@ -6,9 +6,9 @@ import { AuthComponent } from "./auth.component";
 import { AdminComponent } from "./admin.component";
 
 let routing = RouterModule.forChild([
-    { path:"auth", component:AuthComponent},
-    { path:"main", component:AdminComponent},
-    { path: "**", redirectTo:"auth"}
+    { path:'auth', component:AuthComponent},
+    { path:'main', component:AdminComponent},
+    { path: '**', redirectTo:'auth'}
 ])
 
 @NgModule({
