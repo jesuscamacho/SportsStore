@@ -9,7 +9,9 @@ export class OrderRepository {
     private orders: Order[] = [];
     private loaded: boolean = false;
 
-    constructor(private dataSource: RestDataSource) {}
+    constructor(private dataSource: RestDataSource) {
+        this.loadOrders();
+    }
 
     loadOrders(){
         this.loaded = true;

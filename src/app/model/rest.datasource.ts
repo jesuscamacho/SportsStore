@@ -49,7 +49,7 @@ deleteProduct(id: number): Observable<Product> {
 }
 
 getOrders(): Observable<Order[]>{
-  return this.http.get<Order[]>(this.baseUrl+"orders",this.getOptions());
+  return this.http.get<Order[]>(this.baseUrl+"orders");
 }
 
 deleteOrder(id: number): Observable<Order> {

@@ -17,7 +17,6 @@ export class CheckoutComponent {
         this.submitted = true;
         if(form.valid){
             this.repo.saveOrder(this.order).subscribe(order => {
-                this.order.clear();
                 this.orderSent = true;
                 this.submitted = true;
             })
